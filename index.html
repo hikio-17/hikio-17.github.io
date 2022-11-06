@@ -34,10 +34,10 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html" id="myElement"></a></h1>
+      <h1><a href="index.html">Fajri Muhammad Tio</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
      <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      <h2>Hello <span>I'm </span> a  Fullstack <span>Web Developer</span></h2>
+      <h2>Hello <span>I'm </span><span id="myElement"></span></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -489,8 +489,9 @@
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script>
     new TypeIt("#myElement", {
-      strings: "Fajri Muhammad Tio",
+      strings: [" A Fullstack Web Developer"],
       loop: true,
+      breakLines: false,
     }).go();
   </script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
