@@ -37,7 +37,7 @@
       <h1><a href="index.html">Fajri Muhammad Tio</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
      <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-      <h2>Hello <span>I'm </span> a  Fullstack <span class="type-effect">Web Developer</span></h2>
+      <h2>Hello <span>I'm </span> a  Fullstack <span id="myElement">Web Developer</span></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -487,6 +487,11 @@
 
   <!-- Vendor JS Files -->
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script>
+    new TypeIt("#myElement", {
+      strings: "Web Developer",
+    }).go();
+  </script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
